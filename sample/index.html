@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script fundamendalss</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<title>sample page</title>
+
+</head>
+
+
+<style>
+
+	body{
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
+		font-family: 'Lato', sans-serif;
+		font-size: 28px;
+	}
+	
+	.main{
+		background-color: #2980b9;
+		height: 720px;
+	}
+
+	.main p{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		top: 150px;
+		left: 150px;
+	}
+
+</style>
+
+
+
+<body>
+	
+
+
+	<div class="main">
+			<p  onclick="switchColors(this);">this some text</p><br>
+			<p  onclick="switchColors(this);">this some text</p><br>
+			<p  onclick="switchColors(this);">this some text</p><br>
+			<p  onclick="switchColors(this);">this some text</p><br>
+	</div>
+
+
+<script>
+	
+		function switchColors(element)  
+	{  
+	links=document.getElementsByTagName("p") ;  
+	for (var i = 0 ; i < links.length ; i ++)  
+	links.item(i).style.color = 'black' ;  
+	element.style.color='#fff' ;  
+	}
+
+</script>
+
+
+</body>
+</html>
